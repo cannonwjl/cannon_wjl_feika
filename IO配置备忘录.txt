@@ -1,0 +1,84 @@
+端口配置文件
+
+//摄像头配置文件
+          
+                                                                               
+                                    VCC3.3 |   Y0     =>      C8                         //确定
+                                      -    |   Y1     =>      C9                         //确定
+                                      -    |   Y2     =>     C10                         //确定
+                (A27)  C6       <=   PCLK  |   Y3     =>     C11                         //确定
+                                      -    |   Y4     =>     C12                         //确定
+                (A29)  C7       <=   VSYNC |   Y5     =>     C13                         //确定
+                                      -    |   Y6     =>     C14                         //确定
+                                      -    |   Y7     =>     C15                         //确定
+                (A28)  C18      <=   HREF  |   SIO_C  =>     C18         (A26)           //确定
+                                     GND   |   SIO_D  =>      C4         (A25)           //确定
+                                                                                           
+//DMA IO配置
+
+                                            E26               //确定
+                                            B18               //确定
+
+//串口 IO配置
+                                      UART3  C16  C17         //确定
+
+//OLED IO配置
+
+                                     OLED_SCL  PTB11_OUT     //确定
+                                     OLED_SDA  PTB16_OUT     //确定
+                                     OLED_RST  PTB9_OUT      //确定
+                                     OLED_DC   PTB10_OUT     //确定
+                                     OLED_CS   
+                                                                                 
+//电池电压采集       
+                                    A17    //确定
+                                    
+//ADC                                 
+                                    B0     //确定
+                                    B1     //确定
+                                    B2     //确定
+                                    B3     //确定
+                                    
+//按键                              
+                          RIGHT      PTB22    //确定
+                          CENTER     PTC0     //确定
+                          UP         PTC1     //确定
+                          LEFT       PTB23    //确定
+                          DOWN       PTB21    //确定
+
+//PWM                               D4    //确定
+                                    D5    //确定
+                                    D6    //确定
+                                    D7    //确定
+                                                                                       
+//陀螺仪编码器IIC                    
+                                    E24  SDA     //确定
+                                    E25  SCL     //确定
+                                                                               
+//编码器IO
+                                                                                       
+                              DMA_CH4 , PTA12                                                       
+                              DMA_CH14, PTB18                                                          
+                                                                                       
+                              PTA13, GPI,1  //编码器方向                                     
+                              PTB19, GPI,1  //编码器方向                                     
+                                                                                       
+                                                                                       
+                                                                                       
+//led和Beep
+                              LEDCTRL  PTC2_OUT                                                                  
+                              BEEP_ON  PTC3_OUT=1                                                                   
+                              BEEP_OFF PTC3_OUT=0                                                                    
+                                                                                                  
+                                                                                                   
+                                                                                                   
+                                                                                                    
+                                                                                                     
+                                                                                                      
+                                                                                                       
+                                                                                                        
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                             
